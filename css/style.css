@@ -2,7 +2,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {}
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    border-color: #eec802;
+}
 
 .callout-container {
     height: 100vh;
@@ -28,24 +44,74 @@ body {
     background-color: rgba(0,0,0,0.5);
 }
 
-.quotes-container {}
+/* Page Headers */ 
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
 
-.features-container {}
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
 /* block dividers */
 
 .block-divider {
 width: 75px;
 height: 5px;
 border: 0;
-background-color: #f05f40;
+background-color: #444;
 }
 
 .block-divider--orange {
     background-color: #f05f40;
 }
 
+.block-divider--white {
+    background-color: white;
+}
+
 .block-divider--short {
     width: 35px;
+}
+
+/* Content Containers */
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Navbar */
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1; /* makes it so that the image doesn't overlap and hide the navbar*/
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0,25);
+} 
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+font-weight: bold;
 }
 
 /* Jumbotron */
@@ -90,4 +156,25 @@ color: #a7a7a7;
 .btn--red:active:focus {
     background-color: #df4929;
     border-color: #df4929;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40
 }
